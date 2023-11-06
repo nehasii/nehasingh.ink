@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Neha Singh Virtual Art Gallery</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body id="nene">
+<!-- partial:index.partial.html -->
+<input type="checkbox" id="lightswitch" accesskey="l" />
+<input type="checkbox" checked="checked" id="wall4" accesskey="x" />
+
+<label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label>
+<label class="p1hover pointer" title="Tap to zoom - double tap to view code">
+  <a href="" target="_blank"></a>
+  <label class="pointer"></label>
+</label>
+<label class="p1hover pointer" title="Tap to zoom - double tap to view code">
+  <a href="" target="_blank"></a>
+  <label class="pointer"></label>
+</label>
+<label class="p1hover pointer" title="Tap to zoom - double tap to view code">
+  <a href="" target="_blank"></a>
+  <label class="pointer"></label>
+</label>
+<label></label>
+<label class="p2hover pointer" title="Tap to zoom - double tap to view code">
+  <a href="" target="_blank"></a>
+  <label class="pointer"></label>
+</label>
+<label class="p2hover pointer" title="Tap to zoom - double tap to view code">
+  <a href="" target="_blank"></a>
+  <label class="pointer"></label>
+</label>
+<label class="p2hover pointer" title="Tap to zoom - double tap to view code">
+  <a href="" target="_blank"></a>
+  <label class="pointer"></label>
+</label>
+<label></label>
+<label class="p3hover pointer" title="Tap to zoom - double tap to view code">
+  <a href="" target="_blank"></a>
+  <label class="pointer"></label>
+</label>
+<label class="p3hover pointer" title="Tap to zoom - double tap to view code">
+  <a href="" target="_blank"></a>
+  <label class="pointer"></label>
+</label>
+<label class="p3hover pointer" title="Tap to zoom - double tap to view code">
+  <a href="" target="_blank"></a>
+  <label class="pointer"></label>
+</label>
+<label class="pointer turn" for="wall4" title="Rotate right"></label>
+<label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label><label></label>
+
+<z>
+  <x>
+    <y>
+      <floor></floor>
+      <ceiling></ceiling>
+      <wall1>
+        <painting>
+          <img src="2.png" />
+          <p>
+            Vrindavan Kanha <br />
+            ~<br />
+            <small>Neha Singh</small>
+          </p>
+        </painting>
+      </wall1>
+      <wall2>
+        <painting>
+          <img src="1.png" />
+          <p>
+            Hopeless Romantic <br />
+            ~ <br />
+            <small>Neha Singh</small>
+          </p>
+        </painting>
+      </wall2>
+      <wall3>
+        <painting>
+          <img src="3.png" />
+          <p>
+           Valeria<br />
+           ~
+            <small>Neha Singh</small>
+          </p>
+        </painting>
+      </wall3>
+      <wall4>
+
+        <notice>
+
+          <a  target="_blank" href="https://instagram.com/nehahasingh?igshid=MzRlODBiNWFlZA==">Neha's Art Gallery</a>
+          <a  target="_blank" href="https://instagram.com/nehahasingh?igshid=MzRlODBiNWFlZA==">Move Right</a>
+          <a  target="_blank" href="https://instagram.com/nehahasingh?igshid=MzRlODBiNWFlZA==">Move Left</a>
+
+
+        </notice>
+        <door>
+          <a target="_blank" title="Exit" href="https://instagram.com/nehahasingh?igshid=MzRlODBiNWFlZA==">
+          </a>
+        </door>
+
+        <label for="lightswitch" class="pointer" title="Switch"></label>
+      
+      </wall4>
+    </y>
+  </x>
+</z>
+
+<label class="turnback" title="Rotate left" for="wall4"></label>
+
+<!-- partial -->
+  <script  src="./script.js"></script>
+  <script>
+function simulateMouseHover(element, clientX, clientY) {
+  if (!element) {
+    console.error('Target element not found.');
+    return;
+  }
+
+  var mouseEnterEvent = new MouseEvent('mouseenter', {
+    view: window,
+    bubbles: true,
+    cancelable: true,
+    clientX: clientX,
+    clientY: clientY
+  });
+
+  var mouseLeaveEvent = new MouseEvent('mouseleave', {
+    view: window,
+    bubbles: true,
+    cancelable: true,
+    clientX: clientX,
+    clientY: clientY
+  });
+
+  element.dispatchEvent(mouseEnterEvent);
+  element.dispatchEvent(mouseLeaveEvent);
+}
+
+// Usage example
+var targetElement = document.getElementById('nene');
+simulateMouseHover(targetElement, 100, 200); // Simulate mouse hover effect at coordinates (100, 200)
+
+  </script>
+
+</body>
+</html>
